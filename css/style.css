@@ -70,7 +70,7 @@ main img {
 }
 
 .mainContent {
-    margin-left: 148px;
+    margin-left: 10%;
 }
 
 
@@ -80,12 +80,13 @@ main img {
     /* Z-index: -1; */
     padding-top: 48px;
     /* width: 100vw; */
-    padding-left: 104px;
+    padding-left: 10%;
     /* margin-left: 148px;
     margin-right: 612px; */
     letter-spacing: 0.8px;
     line-height: 48px;
     height: 1430px;
+    /* display: flex; */
 
 }
 
@@ -96,19 +97,32 @@ main img {
     line-height: 48px;
 }
 
-.content ul {
+.content .softSkillsList1 {
     max-width: 400px;
     line-height: 36px;
     letter-spacing: 0.8px;
     line-height: 48px;
     font-size: 18px;
-    max-width:200px;
-    float: left;
     display: inline;
+
+  
+
 }
+
+  
+
+
+
+.content li {
+    padding: 1em;
+  margin: 2px;
+}
+
+
 
 .softSkillsList {
     margin-bottom: 48px;
+   
 }
 
 .hardSkillsList {

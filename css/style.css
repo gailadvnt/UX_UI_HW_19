@@ -10,7 +10,8 @@ body {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 632px 1430px 52px 80px;
+    grid-template-rows: 80px 632px 1430px 200
+    px 80px;
     grid-template-areas:
         "nav"
         "main"
@@ -20,10 +21,26 @@ body {
     grid-row-gap: 104px;
 }
 
+.containerWork {
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 203px 800px 800px 200
+    px 80px;
+    grid-template-areas:
+        "nav"
+        "title"
+        "nmp"
+        "triply"
+        "buttonSection"
+        "footer";
+    grid-row-gap: 104px;
+}
+
 nav {
-    background-color: rgba(228, 222, 223, 0.95);
-    grid-area: nav;
-    width: 100vw;
+background-color: rgba(228, 222, 223, 0.95);
+grid-area: nav;
+width: 100vw;
 height: 100%;
 display: flex;
 justify-content: flex-end;
@@ -70,8 +87,53 @@ main img {
 }
 
 .mainContent {
-    margin-left: 10%;
+    margin-left: 148px;
 }
+
+.titleWork {
+    background-color: rgba(228, 222, 223, 0.95);
+    text-align: center;
+    grid-area: title;
+    display: titleWork;
+
+}
+
+.titleWork header {
+    font-family: 'Crimson Pro', serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    letter-spacing: 0.8px;
+    line-height: 48px;
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+    
+
+
+.title p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    letter-spacing: 0.8px;
+    line-height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 
 .content1 {
@@ -80,13 +142,12 @@ main img {
     /* Z-index: -1; */
     padding-top: 48px;
     /* width: 100vw; */
-    padding-left: 10%;
+    padding-left: 104px;
     /* margin-left: 148px;
     margin-right: 612px; */
     letter-spacing: 0.8px;
     line-height: 48px;
     height: 1430px;
-    /* display: flex; */
 
 }
 
@@ -97,32 +158,19 @@ main img {
     line-height: 48px;
 }
 
-.content .softSkillsList1 {
+.content ul {
     max-width: 400px;
     line-height: 36px;
     letter-spacing: 0.8px;
     line-height: 48px;
     font-size: 18px;
+    max-width:200px;
+    float: left;
     display: inline;
-
-  
-
 }
-
-  
-
-
-
-.content li {
-    padding: 1em;
-  margin: 2px;
-}
-
-
 
 .softSkillsList {
     margin-bottom: 48px;
-   
 }
 
 .hardSkillsList {
@@ -170,29 +218,58 @@ main img {
 
 }
 
-/* .content2 {
+
+
+.nmp {
     background-color: rgba(228, 222, 223, 0.95);
-    grid-area: content2;
-    /* Z-index: -1; */
-    /* padding-top: 35px;
-    padding-bottom: 35px; */
+    grid-area: nmp;
+    text-align: center;
+    margin: auto;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    border: 2px solid #fff;
+    display: grid;
+}
+
+.nmp h2 {
+font-size: 24px;
+max-width: 455px;
+}
+
+.nmp p {
+font-size: 18px;
+max-width: 455px;
+}
+
+.triply {
+    background-color: rgba(228, 222, 223, 0.95);
+    grid-area: triply;
+    text-align: center;
+    margin: auto;
+    padding-top: 32px;
+}
 
 
-/* } */ */
+.triply h2 {
+    font-size: 24px;
+    max-width: 455px;
+    }
+    
+    .triply p {
+    font-size: 18px;
+    max-width: 455px;
+    }
+
+
 
 .buttonSection {
     grid-area: buttonSection;
-    /* max-width: 800px; */
-    /* position: absolute;
-    left: 50%;
-    Transform: translate(-50%, -50%); */
     text-align: center;
-    display:flex;
+    align-items: center;
 }
 
 .buttonSection div {
 justify-content: center;
-margin:auto;
 text-align: center;
 }
 
@@ -200,15 +277,42 @@ text-align: center;
 .buttonSection button {
     background-color: #A6A4B4;
     border-radius: 90px;
-    padding: 10px 40px;
+    padding: 20px 80px;
     font-size: 18px;
     text-align: center;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 8px;
     letter-spacing: 0.8px;
-    line-height: 48px;
+    line-height: 32px;
 }
+
+#pdf {
+    position:relative;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+    position:relative;
+    animation: arrowmove 1s infinite;
+    top: 3px;
+  }
+  
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+  }
+
+
+/* @keyframes arrowmove {
+    from  {top: 3px;}
+    to {top:20px;} */
+
+
 
 footer {
     grid-area: footer;
@@ -216,8 +320,8 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   
     width: 100%;
+    /* margin-top: 104px; */
 }
 
 footer img {
@@ -272,7 +376,7 @@ button {
     line-height: 48px;
 }
 
-@media only screen and (max-width:600) {
+@media only screen and (max-width:600px) {
    .container {
        grid-template-columns: 1fr;
        grid-template-rows: 80px 632px 1430px 52px 80px;
@@ -283,4 +387,4 @@ button {
            "buttonSection"
            "footer";
        grid-row-gap: 104px;
-}}
+   }}
